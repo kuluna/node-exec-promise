@@ -20,12 +20,16 @@
   ],
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^8.0.19",
+    "typescript": "^2.4.2"
+  },
   "bugs": {
     "url": "https://github.com/fabiandev/node-exec-promise/issues"
   },
   "homepage": "https://github.com/fabiandev/node-exec-promise#readme",
   "scripts": {
+    "tsc": "tsc index.ts --target es5 --lib es2015 -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
